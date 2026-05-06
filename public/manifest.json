@@ -1,0 +1,21 @@
+{
+  "name": "Moments - Pós-Parto",
+  "short_name": "Moments",
+  "description": "Assistente e Comunidade Pós-Parto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF5F7",
+  "theme_color": "#EC4899",
+  "icons": [
+    {
+      "src": "https://api.dicebear.com/9.x/lorelei/svg?seed=app-icon&mood=happy",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "https://api.dicebear.com/9.x/lorelei/svg?seed=app-icon&mood=happy",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

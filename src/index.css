@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #ec4899; /* pink-500 */
+  --color-primary-dark: #db2777; /* pink-600 */
+  --color-secondary: #fdf2f8; /* pink-50 */
+  --color-accent: #f472b6; /* pink-400 */
+}
+
+@layer base {
+  body {
+    @apply h-screen overflow-hidden font-sans flex items-center justify-center p-2 sm:p-4;
+    background-color: #fdf2f8;
+    background-image: radial-gradient(at 0% 0%, #fbcfe8 0, transparent 50%), 
+                      radial-gradient(at 100% 0%, #fdf2f8 0, transparent 50%), 
+                      radial-gradient(at 100% 100%, #fce7f3 0, transparent 50%), 
+                      radial-gradient(at 0% 100%, #fbcfe8 0, transparent 50%);
+  }
+}
+
+/* Frosted Glass Container */
+.mobile-container {
+  @apply relative w-[320px] h-[640px] bg-white/40 backdrop-blur-2xl rounded-[3rem] border-[8px] border-white/60 shadow-2xl overflow-hidden flex flex-col mx-auto my-auto;
+}
+
+/* Glass Card */
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/50 shadow-sm rounded-2xl;
+}
+
+.glass-card-subtle {
+  @apply bg-white/60 backdrop-blur-sm border border-white/50 shadow-sm rounded-2xl;
+}
+
+.pink-gradient {
+  background: linear-gradient(135deg, #fbcfe8 0%, #fdf2f8 100%);
+}
+
+.iphone-notch {
+  @apply absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-50;
+}
+
+/* Markdown styling */
+.markdown-body {
+  @apply text-sm leading-relaxed;
+}
+.markdown-body p { @apply mb-2; }
+.markdown-body ul { @apply list-disc ml-4 mb-2; }
+.markdown-body ol { @apply list-decimal ml-4 mb-2; }
+.markdown-body strong { @apply font-semibold text-primary-dark; }
